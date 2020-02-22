@@ -22,7 +22,7 @@ Usage
      -i INPUT, --input INPUT
                            The input file_name
      --run-all             If set, walks through this directory and converts all
-                           note.json to ipynb
+                           *.json to ipynb
      --out-path OUT_PATH   Output path
      --to-html             Converts to HTML
      --to-py               Converts to .py
