@@ -8,7 +8,7 @@ from ze2nb import ze2nb
 def run_all(out_path=None, to_html=False, to_py=False):
   for directory, folders, files in os.walk("."):
     for f in files:
-      if f == "note.json":
+      if os.path.splitext(f)[1] == ".json":
         fullpath = os.path.join(directory, f)
         ze2nb(
             fullpath,
