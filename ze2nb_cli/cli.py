@@ -19,7 +19,7 @@ def run_all(out_path=None, to_html=False, to_py=False):
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("-i", "--input", help="The input file_name", type=str)
-  parser.add_argument("--run-all", help="If set, walks through this directory and converts all note.json to ipynb", action="store_true")
+  parser.add_argument("--run-all", help="If set, walks through this directory and converts all *.json to ipynb", action="store_true")
   parser.add_argument("--out-path", help="Output path", type=str)
   parser.add_argument("--to-html", help="Converts to HTML", action="store_true")
   parser.add_argument("--to-py", help="Converts to .py", action="store_true")
