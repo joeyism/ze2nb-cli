@@ -1,0 +1,5 @@
+ze2nb_cli/__pycache__
+**/*.swo
+build
+dist
+ze2nb_cli.egg-info
