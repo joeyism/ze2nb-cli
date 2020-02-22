@@ -5,12 +5,16 @@ import argparse
 
 from ze2nb import ze2nb
 
-def run_all():
+def run_all(out_path=None, to_html=False, to_py=False):
   for directory, folders, files in os.walk("."):
     for f in files:
       if f == "note.json":
         fullpath = os.path.join(directory, f)
-        ze2nb(fullpath)
+        ze2nb(
+            fullpath,
+            out_path=out_path,
+            to_html=to_html,
+            to_py=to_py)
 
 def main():
   parser = argparse.ArgumentParser()
